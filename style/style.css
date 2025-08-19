@@ -6,7 +6,7 @@
     font-family: "Raleway", sans-serif;
 }
 
-body {
+.bodylog {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -170,4 +170,43 @@ INDEX______________FIM
     .cardReg {
         grid-template-columns: 1fr !important;
     }
+}
+
+/*404*/
+.main404{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot404{
+    height: 10vh;
+    width: 100vw;
+    background-color: #0073FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo404{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.robo{
+    width: 512px;
+}
+.btn404{
+    background-color: rgba(0, 0, 0, 0.218);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: white;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.btn404:hover{
+    scale: 1.1;
 }

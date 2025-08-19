@@ -1,15 +1,15 @@
 
 //INDEX____________________________________________________________
 
-esqueci = document.getElementsByClassName("esqueci")[0]
-cardLog = document.getElementsByClassName("cardLog")[0]
-esqueci.addEventListener("click",(event)=>{
+const menu = document.getElementById("menu")
+const nav = document.getElementById("navmob")
+const cont = document.getElementById("containerpop")
+
+menu.addEventListener("click", (event) => {
     event.preventDefault()
-    cardLog.style.transform = 'translateX(100vw)'
-        setTimeout(() => {
-        window.location.href = "../front/cadastro.html"
-    }, 1000);
+    cont.style.display = 'flex'
+    setTimeout(() => {
+        cont.style.opacity = 1
+        nav.style.transform = 'translateX(0vw)'
+    }, 50)
 })
-
-//INDEX____________________________________________________________
-
