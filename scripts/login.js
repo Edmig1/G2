@@ -19,7 +19,10 @@ if (submitcadastro) {
         localStorage.setItem("users", JSON.stringify(users));
         localStorage.setItem("passwords", JSON.stringify(passwords));
 
-        console.log("Usuário cadastrado com sucesso!");
+        alert("Usuário cadastrado com sucesso!");
+        setTimeout(()=>{
+            window.location.href = "../front/login.html"
+        },500)
     });
 }
 

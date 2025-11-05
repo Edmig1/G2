@@ -46,7 +46,7 @@
         </div>
 
         <div class="g2">
-            <h1>g2</h1>
+            <a href="login.html" class="voltar"><h1>g2</h1></a>
             <div class="buscas">
                 <input type="text" name="buscar" id="buscar" placeholder="BUSCAR" class="buscar">
                 <a href="./404.html"> <i class="fa-solid fa-magnifying-glass"></i> </a>
@@ -55,44 +55,44 @@
     </header>
 
     <main class="main">
-        <div class="img noticiaTopo noticia">
+        <div class="img noticiaTopo noticia" onclick="pegaInfo(this)">
             <div class="temanoticia">
-                <p class="textopequeno">Tema da Noticia</p>
+                <p class="textopequeno" id="tema_ntc1">Tema da Noticia</p>
             </div>
             <div class="divtexto">
-                <p class="textogrande"><b>Titulo da Notícia</b></p>
-                <p class="textopequeno">Descrição da Notícia</p>
+                <p class="textogrande"><b id="tit_ntc1">Titulo da Notícia</b></p>
+                <p class="textopequeno" id="desc_ntc1">Descrição da Notícia</p>
             </div>
         </div>
 
         <section class="secnoticiamedia">
-            <div class="img noticiamedia noticia">
+            <div class="img noticiamedia noticia" onclick="pegaInfo(this)">
                 <div class="temanoticia">
-                    <p class="textopequeno">Tema da Noticia</p>
+                    <p class="textopequeno" id="tema_ntc2">Tema da Noticia</p>
                 </div>
                 <div class="divtexto">
-                    <p class="textogrande"><b>Titulo da Noticia</b></p>
-                    <p class="textopequeno">Descrição da Noticia</p>
+                    <p class="textogrande"><b id="tit_ntc2">Titulo da Notícia</b></p>
+                    <p class="textopequeno" id="desc_ntc2">Descrição da Notícia</p>
                 </div>
             </div>
             <div class="parpequenas">
-                <div class="img noticiapequena noticia">
+                <div id="noticia_pequena1" class="img noticiapequena noticia" onclick="pegaInfo(this)">
                     <div class="temanoticia">
-                        <p class="textopequeno">Tema da Noticia</p>
+                        <p class="textopequeno" id="tema_ntc3">Tema da Noticia</p>
                     </div>
                     <div class="divtexto">
-                    <p class="textogrande"><b>Titulo da Noticia</b></p>
-                    <p class="textopequeno">Descrição da Noticia</p>
+                        <p class="textogrande"><b id="tit_ntc3">Titulo da Notícia</b></p>
+                        <p class="textopequeno" id="desc_ntc3">Descrição da Notícia</p>
                     </div>
                 </div>
 
-                <div class="img noticiapequena noticia">
+                <div id="noticia_pequena2" class="img noticiapequena noticia" onclick="pegaInfo(this)">
                     <div class="temanoticia">
-                        <p class="textopequeno">Tema da Noticia</p>
+                        <p class="textopequeno" id="tema_ntc4">Tema da Noticia</p>
                     </div>
                     <div class="divtexto">
-                    <p class="textogrande"><b>Titulo da Noticia</b></p>
-                    <p class="textopequeno">Descrição da Noticia</p>
+                        <p class="textogrande"><b id="tit_ntc4">Titulo da Notícia</b></p>
+                        <p class="textopequeno" id="desc_ntc4">Descrição da Notícia</p>
                     </div>
                 </div>
             </div>
@@ -101,21 +101,21 @@
         <section class="noticiasbaixo">
             <div class="parnoticiasbaixo">
                 <div class="noticiacombo bdr">
-                    <div class="img noticia noticiasm"></div>
+                    <div id="noticiaBaixoImg1" class="img noticia noticiasm" onclick="pegaInfo(this)"></div>
                     <div class="textonoticia">
-                        <p class="nomesm">Nome da Notícia</p>
-                        <p class="titulosm">Título muito brabo da notícia muito braba</p>
-                        <p class="subsm">Subtitulo</p>
-                        <p class="hrsm">Há 10 horas - Em Tema</p>
+                        <p class="nomesm" id="tema_baixo1">Nome da Notícia</p>
+                        <p class="titulosm" id="titulo_baixo1">Título muito brabo da notícia muito braba</p>
+                        <p class="subsm" id="subtitulo_baixo1">Subtitulo</p>
+                        <p class="hrsm" id="hora_baixo1">Há 10 horas - Em Tema</p>
                     </div>
                 </div>
                 <div class="noticiacombo bdr">
-                    <div class="img noticiasm noticia"></div>
+                    <div id="noticiaBaixoImg2" class="img noticiasm noticia" onclick="pegaInfo(this)"></div>
                     <div class="textonoticia">
-                        <p class="nomesm">Nome da Notícia</p>
-                        <p class="titulosm">Título muito brabo da notícia muito braba</p>
-                        <p class="subsm">Subtitulo</p>
-                        <p class="hrsm">Há 10 horas - Em Tema</p>
+                        <p class="nomesm" id="tema_baixo2">Nome da Notícia</p>
+                        <p class="titulosm" id="titulo_baixo2">Título muito brabo da notícia muito braba</p>
+                        <p class="subsm" id="subtitulo_baixo2">Subtitulo</p>
+                        <p class="hrsm" id="hora_baixo2">Há 10 horas - Em Tema</p>
                     </div>
                 </div>
             </div>
@@ -126,20 +126,20 @@
                         <p>Assuntos em Alta</p>
                     </div>
                     <div class="cardg">
-                        <p class="subsm">Título muito brabo</p>
-                        <div class="noticia img noticiaxxs">
+                        <p class="subsm textocard" id="subtitulo_card1" >Título muito brabo</p>
+                        <div class="noticia img noticiaxxs imagemcard" id="noticiaCard1" onclick="pegaInfo(this)">
 
                         </div>
                     </div>
                     <div class="cardg">
-                        <p class="subsm">Título muito brabo</p>
-                        <div class="noticia img noticiaxxs">
+                        <p class="subsm textocard" id="subtitulo_card2">Título muito brabo</p>
+                        <div class="noticia img noticiaxxs imagemcard" id="noticiaCard2" onclick="pegaInfo(this)">
 
                         </div>
                     </div>
                     <div class="cardg">
-                        <p class="subsm">Título muito brabo</p>
-                        <div class="noticia img noticiaxxs">
+                        <p class="subsm textocard" id="subtitulo_card3">Título muito brabo</p>
+                        <div class="noticia img noticiaxxs imagemcard" id="noticiaCard3" onclick="pegaInfo(this)">
 
                         </div>
                     </div>
@@ -156,10 +156,6 @@
     </main>
 
     <footer>
-        <div class="divoltar">
-            <button href="#header" class="voltar">VOLTAR</button>
-        </div>
-
         <div class="creditos">
             <div class="criado">
                 <p class="textofooter g2p"><b>g2</b></p>
@@ -169,5 +165,6 @@
         </div>
     </footer>
         <script src="../scripts/script.js"></script>
+        <script src="../scripts/noticias.js"></script>
 </body>
 </html>
