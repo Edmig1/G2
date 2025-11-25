@@ -5,6 +5,9 @@
     padding: 0;
     font-family: "Raleway", sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 body{
     background-color: #F9F9F9;
@@ -31,7 +34,16 @@ header{
     color: white;
     height: 10vh;
 }
-
+.navegadorpop{
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
+    width: 6rem;
+    align-items: center;
+    color: rgb(42, 116, 255);
+}
 .navegador{
     border: none;
     background-color: transparent;
@@ -242,6 +254,7 @@ footer{
 .bdr{
     border-bottom: 1px solid rgba(201, 201, 201, 0.514);
 }
+
 
 .card{
     background-color: white;

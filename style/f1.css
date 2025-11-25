@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Fontes personalizadas */
+@font-face {
+    font-family: "formula-sans";
+    src: url("../fonts/Formula1-Bold.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "formula-regular";
+    src: url("../fonts/Formula1-Regular.woff2") format("woff");
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+
+.g2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(42, 116, 255);
+    color: white;
+    height: 10vh;
+}
+
+.navegador{
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
+    width: 6rem;
+    align-items: center;
+    color: rgb(42, 116, 255);
+}
+
+h1{
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.buscar{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    background-color: #1c55bd;
+    outline: none;
+    color: white;
+}
+.buscas{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    background-color: #1c55bd;
+    outline: none;
+    color: white;
+}
+.buscas i{
+    color: white;
+}
+
+.g2 ::placeholder{
+    color: white;
+}
+
+nav{
+    padding: 0.8rem;
+}
+
+.user{
+    width: 1rem;
+    height: 1rem;
+    color: rgb(42, 116, 255) !important;
+}
+.voltar{
+    cursor: pointer;
+    background-color: transparent;
+    border: #F9F9F9 solid 2px;
+    border-radius: 10px;
+    color: #F9F9F9;
+    padding: 1rem;
+    text-decoration: none;
+    border: none;
+}
+.logo{
+    height: 5rem;
+}
+
+.titulo{
+    font-family: "formula-sans";
+}
+
+.raceStats{
+    text-align: center;
+    font-family: 'formula-sans';
+    padding: 2rem;
+    background: white;
+}
+
+.podium{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-family: 'formula-sans';
+}
+
+.imgBox{
+    height: 30vh;
+    overflow: hidden;
+}
+
+.pilotImg{
+    width: 50%;
+    border-radius: 25vw 25vw 0px 0px;
+}
+
+.raceHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(48, 136, 220, 1) 20%, rgba(48, 136, 220, 1) 45%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(48, 136, 220, 1) 55%, rgba(48, 136, 220, 1) 80%, rgba(255, 255, 255, 1) 80%);
+
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.tble{
+    width: 50%;
+}
+
+.colocacao{
+    font-family: "formula-sans";
+    text-align: center;
+    border-radius: 123px;
+
+    }
+
+.construtora{
+    color: white;
+    border-radius: 500px;
+    font-family: "formula-regular";
+    width: 50%;
+    text-align: center;
+}
+
+.piloto{
+    font-family: "formula-regular";
+}
+
+.pilotInfos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 50%;
+}
+
+.top3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pilotName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoRow img{
+    height: 2rem;
+}
+
+@media (max-width: 970px) {
+    .podium{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #primeiro{
+        order: 1;
+    }
+    #segundo{
+        order: 2;
+    }
+    #terceiro{
+        order: 3;
+    }
+    .tble{
+        width: 75%;
+    }
+}

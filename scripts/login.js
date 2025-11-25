@@ -48,8 +48,10 @@ if (submit) {
         for(i=0; i< users.length; i++){
             if(users[i] ==email && passwords[i] == senha){
                 window.location.href = "../front/index.html";
+                return 0;
             }
         }
+        alert("Usuário ou senha incorretos")
 
 
     });
